@@ -26,7 +26,7 @@
             
             body {
                 font-family: Arial, sans-serif;
-                background-color: lightgreen;
+                background-color: #4f594f;
                 margin: 0;
             }
 /*         Header and navigation   */
@@ -68,6 +68,29 @@
                 line-height: 1.6;
             }
 
+/*             Form container      */
+            .form-container {
+                border: 1px solid #ccc;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"], input[type="number"], button {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                background-color: #374f38;
+                color: black;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #335435;
+            }
             
         </style>
     </head>
@@ -111,16 +134,24 @@
     from the early 1900's. I truly enjoy a maximalist lifestyle and showing others my collections whenever they come by. 
     </p>
 
-        <h2>Mystery Plant Order</h2>
-        <p>Would you like to try to pull a super special mystery plant? Order today!
-        </p>
+<!--         Second Header -->
+         <header class="header">
+            <h2>Mystery Plants! <br>
+            Would you like to try to pull a super special mystery plant? Order today!<br>
+                 Only $15 a piece!
+            </h2>  
+        </header>
+        
+<!--         Form container -->
+    <div class="form-container">
         <form id="plantForm">
             <label for="quantity">Enter quanity of mystery boxes: </label>
             <input type="number" id="quantity" value="1" min="1">
             <button type="button" id="calculateBtn">Calculate That Total!</button>
         </form>
         <p id="totalDisplay">Total: $0.00</p>
-
+    </div>
+        
         <script>
             // JavaScript to handle the calculation
             const calculateBtn = document.getElementById('calculateBtn');
