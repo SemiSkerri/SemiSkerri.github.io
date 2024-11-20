@@ -1,10 +1,9 @@
-ti# SemiSkerri.github.io
 <!DOCTYPE html>
 <html>
     <head>
         <title> Collections</title>
         <style>
-            
+/*      container for pictures    */
             .container {
                 display: flex;
                 justify-content: center;
@@ -23,9 +22,39 @@ ti# SemiSkerri.github.io
                 font-size: 16px;
                 margin-top: 5px;
             }
+
+            
             body {
+                font-family: Arial, sans-serif;
                 background-color: lightgreen;
+                margin: 0;
             }
+/*         Header and navigation   */
+            .header {
+                background-color: #F8DCC4;
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+            .nav {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .nat li {
+                margin: 0 15px;
+            }
+            .nav a {
+                color: white;
+                text-decoration: none;
+                font-wieght: bold;
+            }
+            .nav a:hover {
+                text-decoration: underline;
+            }
+            
             p {
                 margin: 16px 0;
                 padding: 10px;
@@ -38,12 +67,22 @@ ti# SemiSkerri.github.io
                 margin-left: 40px;
                 line-height: 1.6;
             }
+
+            
         </style>
     </head>
     <body>
-
-        <h1 class= "tab"> Collections
-        </h1>
+        
+<!--         Header                 -->
+        <header class="header">
+            <h1>Collections</h1>
+            <ul class ="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#Care">Care</a></li>
+            </ul>
+        </header>
             
     <p> 
          My name is Alexandra Haines and I have been collecting orchids and other plants for almost ten years. Through those years I have received and lost many specimines, leading to me  <br>
@@ -59,7 +98,8 @@ ti# SemiSkerri.github.io
     human faces like my jester and ballerina figures. A piece of uranium glass that I am kicking myself to this day for not picking up was a dental tray made from uranium glass slag <br>
     from the early 1900's. I truly enjoy a maximalist lifestyle and showing others my collections whenever they come by. 
     </p>
-
+        
+<!--             pictures and comments    -->
         <div class="container">
             <div class="image-box">
                 <img src="https://github.com/SemiSkerri/SemiSkerri.github.io/blob/main/images/Ballerina.JPG?raw=true" alt= "Ballerina Swarovski">
