@@ -10,10 +10,14 @@
                 align-items: center;
                 margin: 20px;
             }
-            .image-container img {
-                display:flex;
+            .image-container {
+                display: flex;
+                justify-content: center;
                 align-items: center;
                 max-width: 200px;
+            }
+            .image-container img {
+                width: 100%;
                 height: auto;
             }
 
@@ -113,8 +117,8 @@
             .button-container {
                 display: flex;
                 flex-direction: column;
-                gap: 10px
-                place-items: right;
+                gap: 10px;
+                align-items: flex-start;
                 height: auto;
                 margin: 0;
             }
