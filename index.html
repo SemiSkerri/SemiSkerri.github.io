@@ -79,6 +79,9 @@
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: [column];
+                justify-content: center; 
             }
             input[type="text"], input[type="number"], button {
                 width: 25%;
@@ -160,12 +163,14 @@
             <button type="button" id=checkOutBtn">Check Out!</button>
         </form>
         <p id="totalDisplay">Total: $0.00</p>
+        <p id="savingsDisplay">Savings: $0.00</p>
     </div>
         
         <script>
             // JavaScript to handle the calculation
             const calculateBtn = document.getElementById('calculateBtn');
             const totalDisplay = document.getElementById('totalDisplay');
+            const savingsDisplay = document.getElementById('savingsDisplay');
            // const checkOut = document.getElementById('checkOut');
 
             calculateBtn.addEventListener('click', function() {
@@ -175,12 +180,13 @@
                 let total= quantity * pricePerPlant;
 
                 if (total > 45) {
+                    savings = total * 0.15;
                     total = total * 0.85; 
                 }
                 
-        //total.toFixed(2)... 2?
                 // const total = quantity * pricePerPlant;
                 totalDisplay.textContent = 'Total: $' + total.toFixed(2); 
+                savingsDisplay.textContent = 'Savings: $' + savings.toFixed(2);
                // const checkOut
             });
         </script>
