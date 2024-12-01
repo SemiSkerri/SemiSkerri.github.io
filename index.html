@@ -80,9 +80,9 @@
                 border-radius: 8px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                 margin: auto;
-/*                 display: flex;
+/*                 display: flex; */
 /*                 flex-direction: [column]; */
-/*                 justify-content: center;  */
+                justify-content: center;
             }
             input[type="text"], input[type="number"], button {
                 width: 25%;
@@ -183,6 +183,9 @@
                 if (total > 45) {
                     savings = total * 0.15;
                     total = total * 0.85; 
+                }
+                else {
+                    savings =  0;
                 }
                 
                 // const total = quantity * pricePerPlant;
