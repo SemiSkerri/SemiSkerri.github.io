@@ -101,6 +101,7 @@
                 color: black;
                 border: none;
                 cursor: pointer;
+                transition: background-color 0.3s ease;
             }
             button:hover {
                 background-color: #242924;
@@ -113,7 +114,12 @@
                 transform: translateX(-50);
                 background-color: #242924;
                 color: black;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 width: max-content;
+                white-space: nowrap;
                 opacity: 0;
                 transition: opacity 0.3s ease, visibility 0.3s ease;
             }
@@ -147,7 +153,18 @@
                 Coco Coir
                 <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
             </button>
-            
+            <button type="button" id="orchidBark">
+                Orchid Bark
+                <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
+            </button>
+            <button type="button" id="perlite">
+                Perlite
+                <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
+            </button>
+            <button type="button" id="soil">
+                All Purpose Potting Soil
+                <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
+            </button>
         </form>
     </body>
 </html>
