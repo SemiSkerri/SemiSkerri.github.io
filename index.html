@@ -147,7 +147,7 @@
          <header class="header">
             <h2>Mystery Plants! <br>
             Would you like to try to pull a super special mystery plant? Order today!<br>
-                 Only $15 a piece!
+                 Only $15 a piece with a 15% discount over 45$!
             </h2>  
         </header>
         
@@ -171,8 +171,15 @@
             calculateBtn.addEventListener('click', function() {
                 const quantity = document.getElementById('quantity').value;
                 const pricePerPlant = 15;
+
+                let total= quantity * pricePerPlant;
+
+                if (total > 45) {
+                    total = total * 0.85; 
+                }
+                
         //total.toFixed(2)... 2?
-                const total = quantity * pricePerPlant;
+                // const total = quantity * pricePerPlant;
                 totalDisplay.textContent = 'Total: $' + total.toFixed(2); 
                // const checkOut
             });
