@@ -6,18 +6,21 @@
 /*      container for pictures    */
             .container {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                align-items: center;
                 margin: 20px;
             }
-            .image-box {
-                margin: 10px;
-                text-align: center;
+            .image-container img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
             }
+/*             
             img {
                 width: 200px;
                 height: auto;
                 border-radius: 8px;
-            }
+            } */
             .caption {
                 font-size: 16px;
                 margin-top: 5px;
@@ -103,7 +106,9 @@
             }
 /*             Button Container */
             .button-container {
-                display: grid;
+                display: flex;
+                flex-direction: column;
+                gap: 10px
                 place-items: center;
                 height: auto;
                 margin: 0;
