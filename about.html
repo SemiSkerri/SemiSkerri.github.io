@@ -73,7 +73,37 @@
             }
 
 /*             Form container      */
-            
+            .form-container {
+                width: 90%;
+                max-width: 500px;
+                height: auto;
+                border: 1px solid #ccc;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                margin: auto;
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
+            }
+            input[type="text"], input[type="number"], button {
+                width: 25%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                width: 100%;
+                background-color: #374f38;
+                color: black;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #242924;
+            }
             
         </style>
     </head>
@@ -89,7 +119,18 @@
             </ul>
         </header>
         <p>
-            Plants are cool!
+            Making The Perfect Plant Soil! <br>
+            Depending on your type of plant, the type of soil they require will vary. Most typical houseplants <br>
+            do fantastically in a chunky soil though, so always have some on hand! It is easy to make and doesn't <br>
+            break the bank! You only need a few ingredients to whip up a medium that your plants will love!
+                                               
         </p>
+        <form>
+            <button type="button" id="cocoCoir">
+                Coco Coir!
+                <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
+            </button>
+            
+        </form>
     </body>
 </html>
