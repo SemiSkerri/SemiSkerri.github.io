@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Care</title>
+        <title>Care</title>
         <style>
 /*      container for pictures    */
             .container {
@@ -67,6 +67,12 @@
                 font-size: 16px;
                 text-align: center;
             }
+            h1 {
+                color: black;
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+            }
             .tab {
                 margin-left: 40px;
                 line-height: 1.6;
@@ -74,11 +80,18 @@
 
 /*             Form container      */
             .form-container {
-                width: 300px;
+                width: 90%;
+                max-width: 500px;
+                height: auto;
                 border: 1px solid #ccc;
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                margin: auto;
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+                justify-content: center;
             }
             input[type="text"], input[type="number"], button {
                 width: 25%;
@@ -87,14 +100,54 @@
                 border: 1px solid #ccc;
                 border-radius: 4px;
             }
+/*             Button Container */
+            .button-container {
+                display: grid;
+                place-items: center;
+                height: auto;
+                margin: 0;
+            }
             button {
+                position: relative;
+                width: 50%;
                 background-color: #374f38;
                 color: black;
                 border: none;
                 cursor: pointer;
+                transition: background-color 0.3s ease;
             }
             button:hover {
                 background-color: #242924;
+            }
+/*             Extra info when you hover over the buttons*/
+            .extra-info { 
+                visibility: hidden;
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #242924;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: max-content;
+                white-space: nowrap;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+            button:hover .extra-info {
+                visibility: visible;
+                opacity: 1;
+            }
+/*             Video Container*/
+            .video-container { 
+                position: relative;
+                padding-bottom: 56.25%
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
             }
             
         </style>
@@ -102,7 +155,7 @@
 
     <body>
          <header class="header">
-            <h1>Care</h1>
+            <h1> Care </h1>
             <ul class ="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -110,8 +163,56 @@
                 <li><a href="care.html">Care</a></li>
             </ul>
         </header>
-        <p>
-           Plants need water and light usually!  
+        
+        <h1>
+             First you must making the perfect plant soil!
+        </h1>
+           
+          <p>  
+            Depending on your type of plant, the type of soil they require will vary. Most typical houseplants <br>
+            do fantastically in a chunky soil though, so always have some on hand! It is easy to make and doesn't <br>
+            break the bank! You only need a few ingredients to whip up a medium that your plants will love!                                 
         </p>
+        
+        <div class = "button-container">
+        <form id= "soilForm">
+            <button type="button" id="cocoCoir">
+                Coco Coir
+                <span class="extra-info">Coco coir has good water retention and is a great peat moss alternative! </span>
+            </button>
+            <button type="button" id="orchidBark">
+                Orchid Bark
+                <span class="extra-info"> Helps airate the soil, reduce suffocation, and big roots love to attatch themselves! </span>
+            </button>
+            <button type="button" id="perlite">
+                Perlite
+                <span class="extra-info">Pourous and helps prevent root rot with well draining media! </span>
+            </button>
+            <button type="button" id="soil">
+                All Purpose Potting Soil
+                <span class="extra-info">Creates a solid foundation for your medium! </span>
+            </button>
+        </form>
+        </div>
+
+        <div class= "container">
+            <div class= "image-box">
+                <img src="https://github.com/SemiSkerri/SemiSkerri.github.io/blob/main/images/ChunkySoil.jpg?raw=true" alt = "Chunky Soil">
+                <div class = "caption"> A Nice Chunky Soil </div>
+            </div>
+        </div>
+        
+                
+        <p>
+            Depending on your plant and preference the amount of each substrate can be changed, however a good base is <br>
+            a 1:1 ratio of each mixed thoroughly. 
+        </p>
+
+        <div class="video-container">
+            <iframe width = "560" height="315" src="https://www.youtube.com/embed/7Vju3oy84PM"
+                frameborder = "0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        
     </body>
 </html>
