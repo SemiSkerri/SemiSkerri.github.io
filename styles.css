@@ -5,14 +5,15 @@
                 justify-content: center;
                 margin: 20px;
             }
-            .image-box {
-                margin: 10px;
-                text-align: center;
+            .image-container {
+                display: center;
+                justify-content: center;
+                align-items: center;
+                max-width: 200px;
             }
-            img {
-                width: 200px;
+            .image-container img {
+                width: 100%;
                 height: auto;
-                border-radius: 8px;
             }
             .caption {
                 font-size: 16px;
@@ -63,6 +64,20 @@
                 font-size: 16px;
                 text-align: center;
             }
+            h1 {
+                color: black;
+                font-size: 24px;
+                padding: 10px;
+                text-align: center;
+                margin: 16px 0;
+            }
+            h2 {
+                color: black;
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+                margin: 16px 0;
+            }
             .tab {
                 margin-left: 40px;
                 line-height: 1.6;
@@ -89,6 +104,15 @@
                 margin: 5px 0;
                 border: 1px solid #ccc;
                 border-radius: 4px;
+            }
+/*             Button Container */
+            .button-container {
+                display: center;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                height: auto;
+                margin: 0;
             }
             button {
                 position: relative;
