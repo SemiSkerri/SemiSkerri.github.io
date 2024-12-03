@@ -101,4 +101,36 @@
             button:hover {
                 background-color: #242924;
             }
+            
+/*             Extra info when you hover over the buttons*/
+            .extra-info { 
+                visibility: hidden;
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #242924;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: max-content;
+                white-space: nowrap;
+                opacity: 0;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+             button:hover .extra-info {
+                visibility: visible;
+                opacity: 1;
+            }
+/* Video Container */
+            .video-container { 
+/*                 position: relative; */
+                align: center;
+                padding-bottom: 56.25%
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
                     
