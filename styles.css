@@ -151,7 +151,7 @@
 /* Video Container */
             .video-container { 
 /*                 position: relative; */
-                align: center;
+                align: realtive;
                 padding-bottom: 56.25%
                 height: 0;
                 overflow: hidden;
