@@ -56,14 +56,17 @@
                  Only $15 a piece with a 15% discount over 45$!
             </h2>  
         </header>
-        
+
+        <audio id="chaching" src="https://github.com/SemiSkerri/SemiSkerri.github.io/blob/main/images/chaching.mp3">
+            Your browser does not support the audio element.
+            </audio>
 <!--         Form container -->
     <div class="form-container">
         <form id="plantForm">
             <label for="quantity">Enter quanity of mystery boxes: </label>
             <input type="number" id="quantity" value="1" min="1">
             <button type="button" id="calculateBtn">Calculate That Total!</button>
-            <button type="button" id=checkOutBtn">Check Out!</button>
+            <button type="button" id="checkOutBtn">Check Out!</button>
         </form>
         <p id="totalDisplay">Total: $0.00</p>
         <p id="savingsDisplay">Savings: $0.00</p>
@@ -95,6 +98,14 @@
                 savingsDisplay.textContent = 'Savings: $' + savings.toFixed(2);
                // const checkOut
             });
+
+            const checkOutBtn = document.getElementById('checkOutBtn');
+            const audio = document.getElementById('caching');
+
+            checkOutBtn.addEventListener('click', function() {
+                audio.play();
+            });
+            
         </script>
             
         
