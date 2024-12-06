@@ -155,7 +155,7 @@
             }
 /* Video Container */
             .video-container { 
-                position: relative; 
+                position: flex; 
                 align: realtive;
                 padding-bottom: 56.25%;
                 height: 0;
