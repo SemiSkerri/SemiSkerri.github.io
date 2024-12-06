@@ -7,6 +7,7 @@
             }
             .image-container {
                 display: flex;
+                flex-direction: collumn;
                 padding: 20px;
                 margin: 20px;
                 justify-content: center;
@@ -15,6 +16,7 @@
             }
             .image-container img {
                 display: flex;
+                display-direction: collumn;
                 padding: 20px;
                 margin: 20px;
                 width: 100%;
