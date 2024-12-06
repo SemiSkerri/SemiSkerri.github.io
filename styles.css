@@ -7,6 +7,7 @@
             }
             .image-container {
                 display: center;
+                margin: 20px;
                 justify-content: center;
                 align-items: center;
                 max-width: 200px;
