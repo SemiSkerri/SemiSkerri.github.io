@@ -1,12 +1,12 @@
 
 /*      container for pictures    */
             .container {
-                display: flex;
+                display: center;
                 justify-content: center;
                 margin: 20px;
             }
             .image-container {
-                display: flex;
+                display: center;
                 padding: 20px;
                 margin: 20px;
                 justify-content: center;
