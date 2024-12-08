@@ -137,10 +137,10 @@
             .button-container {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 20px;
                 align-items: center;
                 height: auto;
-                margin: 20px;
+                margin: 30px;
             }
             button {
                 position: relative;
