@@ -6,26 +6,41 @@
                 margin: 20px;
             }
             .image-container {
-                display: flex;
+                        position: relative;
+                        display: inline-block;
+/*                 display: flex;
                 flex-direction: collumn;
                 padding: 20px;
                 margin: 20px;
                 justify-content: center;
                 align-items: center;
-                max-width: 200px;
+                max-width: 200px; */
             }
             .image-container img {
-                display: flex;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+/*                 display: flex;
                 display-direction: collumn;
                 padding: 20px;
                 margin: 20px;
                 width: 100%;
-                height: auto;
+                height: auto; */
             }
             .caption {
-                display: center;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        padding: 5px 10px;
+                        font-size: 16px;
+                        text-align: center;
+                        
+/*                 display: center;
                 font-size: 16px;
-                margin-top: 5px;
+                margin-top: 5px; */
             }
 
 /*             Body Specs        */
