@@ -85,7 +85,7 @@
 
 /*             Paragraph specs       */
             p {
-                margin: 25px 0;
+                margin: 5px 0;
                 padding: 10px;
                 text-indent: 40px;
                 line-height: 1.6;
@@ -97,7 +97,7 @@
                 font-size: 28px;
                 padding: 10px;
                 text-align: center;
-                margin: 16px 0;
+                margin: 5px 0;
             }
             h2 {
                 color: black;
