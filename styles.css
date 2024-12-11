@@ -169,7 +169,7 @@
 /* Video Container */
             .video-container { 
                 position: relative; 
-                margin: 0 auto;
+                margin: auto;
                 padding-bottom: 56.25%;
                 height: 0;
                 overflow: hidden;
