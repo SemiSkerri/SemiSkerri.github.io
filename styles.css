@@ -19,7 +19,7 @@
                         margin-left: 15px;
             }
             .image-container img {
-                        display: block;
+                        display: flex;
                         width: 100%;
                         height: auto;
             }
