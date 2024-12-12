@@ -171,7 +171,7 @@
                 position: relative; 
                 margin: auto;
                 padding-bottom: 56.25%;
-                height: 0;
+                height: auto;
                 overflow: hidden;
                 max-width: 100%;
                 display: block;
